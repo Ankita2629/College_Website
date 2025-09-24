@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="admi.css">
+    <style>
+        
+
+
+body{
+    
+    height: 100vh;
+    
+    
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+
+}
+
+
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    background: #fff;
+padding: 25px 30px;
+  border-radius: 5px;
+}
+
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+
+
+}
+
+
+.container 
+form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100%/2-20px);
+}
+
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+    width: 100%;
+
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6); 
+}
+
+
+form .button input:hover{
+    background:linear-gradient(-135deg,#71b7e6,#9b59b6); 
+}
+
+@media (max-width:584)
+{
+.container{
+    max-width: 100%;
+    width:100%;
+}
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav img{
+    width: 70px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2px 10px;
+    position: relative;
+}
+
+.nav-links ul li ::after{
+    
+    width: 0;
+    height: 2px;
+    background-color:red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    color:white;
+    
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: rgb(226, 223, 238);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="BIT.html"> <img src="images/logo.png"> </a>
+            <div class="nav-links">
+                <ul>
+                    <li> <button type="button" class="btn btn-outline-dark"> <a href="BIT.html">Home</a></button></li>
+                    <li><button type="button" class="btn btn-outline-dark"> <a href="about.html">About</a></button></li>
+                    <li> <button type="button" class="btn btn-outline-dark"> <a href="enquiry.html">Enquiry</a></button></li>
+                    <li><button type="button" class="btn btn-outline-dark"> <a href="course.html">Courses</a></button></li>
+                    <li> <button type="button" class="btn btn-outline-dark"> <a href="placement.html">Placement Record</a></button></li>
+                    <li> <button type="button" class="btn btn-outline-dark"> <a href="review.html">Student Review</a></button></li>
+                    <li> <button type="button" class="btn btn-outline-dark"> <a href="contact.html">Contact us</a></button></li>
+                    <li><button type="button" class="btn btn-outline-dark"> <a href="chatbot.html">Ask questions</a> </button> </li>
+                </ul>
+            </div>
+        </nav></section>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="connect.php" method="post">
+            <div class="user-details"> 
+                <div class="input-box">
+                    <span class="details">First Name:</span>
+                    <input type="text" placeholder="First Name" name="FirstName" required >
+                    </div>
+                    <div class="input-box">
+                    <span class="details">Middle Name:</span>
+                    <input type="text" placeholder="Middle Name" name="MiddleName" required >
+                    </div>
+                    <div class="input-box">
+                    <span class="details">Last Name:</span>
+                    <input type="text" placeholder="Last Name" name="LastName" required >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date OF Birth:</span>
+                        <input type="date" placeholder=" DOB" name="DOB" required >
+                    
+                        </div> 
+                        <div class="input-box">
+                            <span class="details">Gender:</span>
+                            <select id="details" name="gender" required>
+                                <option value="">Select Gender:</option>
+                                <option value="male" value="m">Male</option>
+                                <option value="female" value="f">Female</option>
+                                <option value="other" value="o">Other</option>
+                            </select>
+                        </div>     
+                        <div class="input-box">
+                            <span class="details">email:</span>
+                            <input type="email" placeholder="Email" name="Email" required>
+                            </div>  
+                            <div class="input-box">
+                                <span class="details">Mobile Number:</span>
+                                <input type="number" placeholder="MOB" pattern="[0-9]{10}" name="MOB" required>
+                                </div> 
+                                <div class="input-box">
+                                    <span class="details">Address:</span>
+                                    <input type="text" placeholder="Address" name="Address" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <span class="details">City:</span>
+                                        <input type="text" placeholder="City" name="City" required>
+                                        </div> <div class="input-box">
+                                            <span class="details">State:</span>
+                                            <input type="text" placeholder="State" name="State" required>
+                                            </div>  
+                                            <div class="input-box">
+                                                <span class="details">10th School's Name</span>
+                                                <input type="text" placeholder="10th school's name" name="10th" required>
+                                                </div>      
+
+                                                <div class="input-box">
+                                                    <span class="details">12th School's Name</span>
+                                                    <input type="text" placeholder="12th school's name" name="12th" required>
+                                                    </div>  
+                                                    <div class="button">
+                                                        <input type="submit" value="SUBMIT"/>
+                                                    </div>
+        </form>
+    </div>
+</body>
+</html>

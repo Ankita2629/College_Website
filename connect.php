@@ -1,0 +1,14 @@
+<?php
+   $FirstName=$_post['FirstName'];
+   $MiddleName=$_post['MiddleName'];
+   $LastName=$_post['LastName'];
+   $DOB=$_post['DOB'];
+   $gender=$_post['gender'];
+   $Email=$_post['Email'];
+   $MOB=$_post['MOB'];
+   $Address=$_post['Address'];
+   $City=$_post['City'];
+   $State=$_post['State'];
+   $10th=$_post['10th'];
+   $12th=$_post['12th'];
+?>
